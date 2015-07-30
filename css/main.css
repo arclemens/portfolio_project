@@ -11,17 +11,177 @@ html, body {
 
 #left {
 	float: left;
-	width: 25%; 
+	width: 20%; 
 	height: 100%;
-	background: green;
+	background: #DFEDD6;
+	overflow: hidden;
 }
+
+/* let's style the contact */
+
+.contact-item {
+	text-decoration: none;
+	color: white;
+	opacity: .5;
+	padding: 10px 100px;
+	display: block;
+	
+	-webkit-transition: opacity 1s ease;
+		-moz-transition: opacity 1s ease;
+			-o-transition: opacity 1s ease;
+		-ms-transition:
+			transition: opacity 1s ease;
+}
+
+.contact-item:hover {
+	opacity: 1;
+}
+
+#contact {
+	position: fixed;
+	top: 385px;
+	margin-left: 50px;
+}
+
+/* let's style the footer */
+
+footer	{
+	float: clear;
+	border-top: solid 3px black;
+	position: fixed;
+	bottom: 0;
+}
+
+footer h3 {
+	padding: 3px 63px;
+	margin: 0;
+}
+
+/* let's style the title header */
+
+#title {
+	padding-top: 1px;
+	padding-left: 15px;
+	border-bottom: solid 3px black;
+	font-size: 1.25em;
+}
+
+#title a {
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+h2 {
+	padding-left: .75em;
+}
+
+h1, h2 {
+	margin: .25em;
+}
+
+/* let's style the arrow */
+
+#arrow {
+	position: fixed;
+	width: 75px;
+	height: auto;
+	left: 280px;
+	top: 425px;
+}
+
+/* let's style the nav */
+
+nav {
+	padding-left: 40px;
+	padding-top: 35px;
+	max-width: 260px;
+}
+
+.nav_menu h4, .nav_button h4 {
+	font-size: 15px;
+	font-weight: 500;
+	padding: 7px 12px;
+	margin: 0;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-top: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	background: #AEDD94;
+	background: -moz-linear-gradient(top, #AEDD94 0%, #9dc785 44%, #8bb176 100%); /* FF3.6+ */
+  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AEDD94), color-stop(44%,#9dc785), color-stop(100%,#8bb176)); /* Chrome,Safari4+ */
+  	background: -webkit-linear-gradient(top, #AEDD94 0%,#9dc785 44%,#8bb176 100%); /* Chrome10+,Safari5.1+ */
+  	background: -o-linear-gradient(top, #AEDD94 0%,#9dc785 44%,#8bb176 100%); /* Opera 11.10+ */
+  	background: -ms-linear-gradient(top, #AEDD94 0%,#9dc785 44%,#8bb176 100%); /* IE10+ */
+	background: linear-gradient(top, #AEDD94 0%, #9dc785 44%, #8bb176 100%);
+}
+
+.nav_menu h4:hover, .nav_button h4:hover {  
+  background: #BEE4A9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #BEE4A9 0%, #B6E09F 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BEE4A9), color-stop(100%,#B6E09F)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #BEE4A9 0%,#B6E09F 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #BEE4A9 0%,#B6E09F 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #BEE4A9 0%,#B6E09F 100%); /* IE10+ */
+  background: linear-gradient(top,  #BEE4A9 0%,#B6E09F 100%); /* W3C */
+}
+
+.nav_menu h4 a, .nav_button h4 a {
+	color: #F7FCF4;
+	display: block;
+	text-decoration: none;
+	width: 200px;
+}
+
+.nav_menu ul {
+	background: #fff;
+	font-size: 13px;
+	line-height: 30px;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	height: 0;
+
+	/* let's animate it */
+	-webkit-transition: height 1s ease;
+		-moz-transition: height 1s ease;
+			-o-transition: height 1s ease;
+		-ms-transition: height 1s ease;
+			transition: height 1s ease;
+}
+
+.large:hover ul {
+	height: 93px;
+}
+
+.small:hover ul {
+	height: 62px;
+}
+
+.nav_menu ul a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #717B6B;
+	display: block;
+	width: 200px;
+}
+
+.nav_menu li {
+	border-bottom: 1px solid #eee;
+}
+
+.nav_menu li:hover {
+	background: #eee;
+}
+
+
 
 /* let's style the right div */
 
 #right {
-	overflow: hidden;
+	overflow: scroll;
 	height: 100%;
-	background-color: blue;
+	background-color: #AEDD94;
 }
 
 /* let's style the overlay div */
@@ -29,42 +189,11 @@ html, body {
 #overlay {
 	width: 90%;
 	height: inherit;
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(44,44,44,.75);
 }
 
-/* let's style the nav */
+/* let's increase the p size for debugging! */
 
-nav {
-	padding-top: 15px;
-	padding-left: 20px;
-	float: left;
-}
-
-/* let's style the contact */
-
-.contact-item {
-	display: block;
-}
-
-#contact {
-	padding-top: 10px;
-}
-
-/* let's style the title header */
-
-#title {
-	padding-top: 7px;
-	padding-left: 15px;
-	border-bottom: solid 3px black;
-}
-
-/* let's style the arrow */
-
-#arrow {
-	position: relative;
-	width: 75px;
-	height: auto;
-	top: 35%;
-	left: 0;
-	float: right;
+p {
+	font-size: 200px;
 }
