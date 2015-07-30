@@ -1,0 +1,70 @@
+/* THIS IS CSS!!! */
+
+/* let's style the body */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+/* let's style the left div */
+
+#left {
+	float: left;
+	width: 25%; 
+	height: 100%;
+	background: green;
+}
+
+/* let's style the right div */
+
+#right {
+	overflow: hidden;
+	height: 100%;
+	background-color: blue;
+}
+
+/* let's style the overlay div */
+
+#overlay {
+	width: 90%;
+	height: inherit;
+	background-color: rgba(0,0,0,.6);
+}
+
+/* let's style the nav */
+
+nav {
+	padding-top: 15px;
+	padding-left: 20px;
+	float: left;
+}
+
+/* let's style the contact */
+
+.contact-item {
+	display: block;
+}
+
+#contact {
+	padding-top: 10px;
+}
+
+/* let's style the title header */
+
+#title {
+	padding-top: 7px;
+	padding-left: 15px;
+	border-bottom: solid 3px black;
+}
+
+/* let's style the arrow */
+
+#arrow {
+	position: relative;
+	width: 75px;
+	height: auto;
+	top: 35%;
+	left: 0;
+	float: right;
+}

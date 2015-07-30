@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Speaks to Me Design"
 		<meta name="author" content="Atlas">
-		<link rel="stylesheet" href="**">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="Font-Awesome-master/css/font-awesome.css">
 		<title>Speaks to Me Design</title>
 		 <!--[if lt IE 9]>
@@ -13,8 +13,9 @@
 	</head>
 	<body>
 		<div id="left">
-			<header class="one"><a href="index.html">Speaks to Me</a></header>
-			<header class="two"><a href="index.html">Design Portfolio</a></header>
+			<div id="overlay">
+			<header id="title"><a href="index.html"><h1>Speaks to Me</h1>
+			<h2>Design Portfolio</h2></a></header>
 			<nav>
 				<div class="nav_button active"> <!--i want this to work differently in two ways: current page & no expansion!-->
 					<a href="index.html">Home</a>
@@ -34,13 +35,31 @@
 						<li><a href="#">Design Goodies</a></ul>
 					</ul>
 				</div>
-			</nav>
 			<div id="contact">
 				<a class="contact-item" href="#"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Email</a>
 				<a class="contact-item" href="#"><i class="fa fa-linkedin fa-fw"></i>&nbsp; LinkedIn</a> <!--could be fa-linkedin-square -->
 				<a class="contact-item" href="#"><i class="fa fa-behance fa-fw"></i>&nbsp; Behance</a> <!--could be fa-behance-square -->
 			</div>
-			
+			</nav>
+				<img id="arrow" src="icons/ic_keyboard_arrow_right_black_24px.svg">
+			</div>
+		</div>
+		<div id="right">
+			<header>
+				<h1>Welcome Header</h1>
+			</header>
+			<div class="content">
+				<p>Put an introduction here!</p>
+				<p>Lorem ipusom text.</p>
+				<p>Include mission statement here!</p>
+				<p>This should be about three paragraphs.</p>
+				<p>Expand me! <br><br><br></p>
+				<h1>MORE!</h1>
+				<h1>MORE!! <br> MOREE!!</h1>
+			</div>
+			<footer>
+				<p>Copyright 2015 @ Clemens</p>
+			</footer>
 		</div>
 		<!-- run javascript at the end -->
 		<script src="js/script.js"></script>
